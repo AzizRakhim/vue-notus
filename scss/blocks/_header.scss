@@ -1,0 +1,83 @@
+.header__container{
+  margin-left: 16rem;
+  background-color: rgba(241,245,249, 1);
+  position: relative;
+}
+
+.header{
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header__title-link{
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.header__search-box{
+  flex-grow: 1;
+  display: flex;
+  justify-content: end;
+  height: 100%;
+}
+
+.header__search-inner{
+  position: relative;
+  margin-right: 0.75rem;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.header__icon-box{
+  width: 2rem;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  line-height: 1.375;
+  font-size: 1rem;
+  color: rgba(203,213,225, 1);
+}
+
+.header__input{
+  padding-left: 2.5rem;
+  padding-right: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: rgba(71,85,105, 1);
+  outline: 2px solid transparent;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.header__img-box{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+}
+
+.header__user-btn{
+  border: none;
+  background-color: transparent;
+
+  img{
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+  }
+}
