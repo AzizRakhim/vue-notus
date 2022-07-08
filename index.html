@@ -12,7 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.min.css">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   
@@ -296,12 +296,187 @@
 
   <section id="dashboard" class="dashboard">
     <div class="container">
-      
+      <div class="dashboard__inner d-flex">
+        <div class="dashboard__line col-8">
+          <div class="dashboard__border">
+            <div class="dashboard__line-header">
+              <h6 class="dashboard__entry">
+                Overview
+              </h6>
+              <h2 class="dashboard__line-title">
+                Sales value
+              </h2>
+            </div>
+            <div class="dashboard__canvas">
+              <canvas id="myChart" width="100%" height="350"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__bar col-4">
+          <div class="dashboard__border bar-border">
+            <div class="dashboard__line-header">
+              <h6 class="dashboard__entry bar-entry">
+                Performance
+              </h6>
+              <h2 class="dashboard__line-title bar-title">
+                Totale orders
+              </h2>
+            </div>
+            <div class="dashboard__canvas">
+              <canvas id="myBar" width="100%" height="350"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
   <script src="js/main.js"></script>
+  <script>
+    const labels = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      "July"
+    ];
+  
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: '2022',
+        backgroundColor: '#4C51BF',
+        borderColor: '#4C51BF',
+        data: [65, 77, 66, 44, 56, 67, 75],
+      },{
+        label: '2021',
+        backgroundColor: '#fff',
+        borderColor: '#fff',
+        data: [40, 65, 86, 73, 56, 60, 87],
+      }],
+    };
+  
+    const config = {
+      type: 'line',
+      data: data,
+      options: {
+        resposive : true,
+        maintainAspectRatio : false,
+        plugins: {
+          legend : {
+            position : "bottom",
+            align : "end",
+            labels: {
+              color : "#fff"
+            }
+          }
+        },
+        tension : 0.4,
+        scales : {
+          y : {
+            grid : {
+              display : true,
+              drawBorder : false,
+              borderDash : [4, 4],
+              color : "#515d6e",
+              drawTicks: false,
+            }, 
+            ticks : {
+              color : "#fff"
+            }
+          },
+          x : {
+            grid : {
+              display : false,
+            },
+            ticks: {
+              color : "#fff"
+            },
+          } 
+        }
+      }  
+    };
+
+    const myChart = new Chart(
+    document.getElementById('myChart').getContext("2d"),
+    config
+    );
+
+    // Bar chart
+    
+    const labelsBar = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      "July"
+    ];
+
+    const dataBar = {
+      labels: labelsBar,
+      datasets: [{
+        label: '2022',
+        backgroundColor: '#ED64A6',
+        borderColor: '#ED64A6',
+        data: [30, 78, 55, 34, 100, 45, 12],
+        barThickness : 8
+      },{
+        label: '2021',
+        backgroundColor: '#4C51BF',
+        borderColor: '#4C51BF',
+        data: [27, 68, 86, 73, 10, 5, 87],
+        barThickness : 8
+      }],
+    };
+  
+    const configBar = {
+      type: 'bar',
+      data: dataBar,
+      options: {
+        resposive : true,
+        maintainAspectRatio : false,
+        plugins: {
+          legend : {
+            position : "bottom",
+            align : "end",
+            labels: {
+              fontColor : "#ccc"
+            }
+          }
+        },
+        tension : 0.4,
+        scales : {
+          y : {
+            grid : {
+              display : true,
+              drawBorder : false,
+              borderDash : [4, 4],
+              color : "#515d6e",
+              drawTicks: false,
+            }
+          },
+          x : {
+            grid : {
+              display : false,
+            },
+            ticks: {
+              display: false
+            },
+          }
+        }
+      }  
+    };
+
+    const myBar = new Chart(
+    document.getElementById('myBar').getContext("2d"),
+    configBar
+    );
+  </script>
 </body>
 </html>
