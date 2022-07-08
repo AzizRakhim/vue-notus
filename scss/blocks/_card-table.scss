@@ -1,0 +1,148 @@
+.card-table{
+  margin-left: 16rem;
+  margin-top: -7rem;
+  position: relative;
+  z-index: 100;
+}
+
+.card-table__wrapper{
+  margin-top: 1rem;
+}
+
+.card-table__inner{
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+}
+
+.card-table__white{
+  background-color: #fff;
+  border-radius: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-table__title{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-transform: capitalize;
+}
+
+.card-table__th-img-box{
+  img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+    background-color: #fff;
+    object-fit: cover;
+    border: 1px solid #ccc;
+  }
+
+  span{
+    color: rgba(71,85,105,1);
+    font-weight: 700;
+    margin-left: 0.75rem;
+  }
+}
+
+.card-table{
+  td{
+    vertical-align: middle;
+  }
+}
+
+.card-table__status{
+  i{
+    margin-right: 0.5rem;
+  }
+}
+
+.pending{
+  color: rgba(249,115,22,1);
+}
+
+.card-table__table-list{
+  @include list-style;
+}
+
+.card-table__table-item{
+  &:not(:first-child){
+    margin-left: -1rem;
+  }
+
+  img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid rgba(248,250,252,1);
+    border-radius: 50%;
+  }
+}
+
+.table-red{
+  width: 60%;
+}
+
+.completed{
+  color: rgba(16,185,129,1);
+}
+
+.table-green{
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.delayed{
+  color: rgba(239,68,68,1);
+}
+
+.table-delayed{
+  width: 73%;
+}
+
+.schedule{
+  color: rgba(20,184,166,1);
+}
+
+.social-light-salad{
+  background-color: rgba(153,246,228,1);
+}
+
+.social-dark-salad{
+  background-color: rgba(20,184,166,1);
+}
+
+.table-salad{
+  width: 90%;
+}
+
+.table__real-btn{
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(100,116,139,1);
+  padding: 0.25em 0.75rem;
+}
+
+.card-table-main-green{
+  background-color: rgba(6,78,59,1);
+}
+
+.card-table-main-green{
+  th{
+    color: rgba(110,231,183,1);
+  }
+
+  thead{
+    th{
+      border: 1px solid rgba(4,120,87,1);
+      background-color: rgba(6,95,70,1) !important;
+      border-left: none;
+      border-right: none;
+    }
+  }
+}
+
+.table-color-white{
+  color: #fff !important;
+}

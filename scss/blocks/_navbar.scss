@@ -68,6 +68,7 @@
   line-height: 1rem;
   font-weight: 700;
   text-transform: uppercase;
+  transition: all 0.3s ease;
 
   .fa{
     color: rgba(203,213,225, 1);
@@ -75,6 +76,7 @@
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: 900;
+    transition: all 0.2s ease;
   }
 
   .fab{
@@ -83,6 +85,7 @@
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: 900;
+    transition: all 0.2s ease;
   }
 
   .fas{
@@ -91,10 +94,19 @@
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: 900;
+    transition: all 0.2s ease;
   }
 }
 
 .tti{
   text-transform: capitalize;
+}
+
+.nav-bar__btn--active{
+  color: rgba(16,185,129,1) !important;
+
+  i{
+    color: rgba(16,185,129,1) !important;
+  }
 }
 

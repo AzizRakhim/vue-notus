@@ -1,0 +1,236 @@
+.setting{
+  margin-left: 16rem;
+  margin-top: -7rem;
+  position: relative;
+  z-index: 100;
+}
+
+.setting__input-box{
+  padding: 0 1rem;
+}
+
+.setting__input-inner{
+  padding-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(241,245,249,1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.setting__input-header{
+  padding: 1.5rem;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+  background-color: #fff;
+}
+
+.setting__input-title{
+  color: rgba(51,65,85, 1);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.setting__input-btn{
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.5em 1rem;
+  outline: 2px solid transparent;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  border-radius: 0.25rem;
+  background-color: rgba(16,185,129,1);
+  border: none;
+}
+
+.setting__form{
+  padding: 2.5rem;
+  padding-top: 0;
+}
+
+.setting__form-title{
+  color: rgba(148,163,184,1);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+.setting__input-list{
+  @include list-style;
+}
+
+.setting__input-item{
+  padding: 0 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.setting__input-label{
+  color: rgba(71,85,105,1);
+  margin-bottom: 0.5rem;
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+}
+
+.setting__input{
+  color: rgba(71,85,105, 1);
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  width: 100%;
+}
+
+.setting__textarea{
+  color: rgba(71,85,105, 1);
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  width: 100%;
+}
+
+.setting__bio-box{
+  padding: 0 1rem;
+}
+
+.setting__bio-inner{
+  border-radius: 0.5rem;
+  background-color: rgba(241,245,249,1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.setting__bio-top{
+  position: relative;
+  padding: 1rem;
+  margin-top: 5rem;
+}
+
+.setting__img-wrapper{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: -5rem !important;
+
+  img{
+    border-radius: 9999px;
+    width: 100%;
+    max-width: 150px;
+  }
+}
+
+.setting__num-wrapper{
+  padding: 0 1rem !important;
+  margin-top: 5rem !important;
+  display: flex;
+  justify-content: center;
+}
+
+.setting__num-list{
+  @include list-style;
+}
+
+.setting__num-item{
+  padding: 0.75rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.setting__bio-num{
+  letter-spacing: 0.025em;
+  display: block;
+  text-transform: uppercase;
+  color: rgba(71,85,105, 1);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.setting__bio-type{
+  color: rgba(148,163,184,1);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.setting__bio-middle{
+  margin-top: 3px;
+  text-align: center;
+}
+
+.setting__bio-middle-title{
+  color: rgba(51,65,85,1);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.setting__bio-location{
+  color: rgba(148,163,184,1);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  font-weight: 700;
+
+  i{
+    margin-right: 0.5rem;
+    line-height: 1.75rem;
+    font-weight: 900;
+  }
+}
+
+.setting__bio-middle-text{
+  color: rgba(71,85,105,1);
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+
+  i{
+    color: rgba(148,163,184,1);
+    line-height: 1.75rem;
+    font-weight: 900;
+    font-size: 1.125rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.bio-m-0{
+  margin-top: 0;
+}
+
+.setting__bio-bottom{
+  padding: 2.5rem 0;
+  text-align: center;
+  border-top: 2px solid rgba(226,232,240,1);
+  margin-top: 2.5rem;
+}
+
+.setting__bio-bottom-text{
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  color: rgba(51,65,85,1);
+  margin-bottom: 1rem;
+  line-height: 1.625;
+  font-size: 1.125rem;
+}
+
+.setting__bio-bottom-link{
+  color: rgba(16,185,129,1);
+  text-decoration: none;
+}
