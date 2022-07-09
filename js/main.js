@@ -13,4 +13,4 @@ elSectionBtns.forEach((btn, index) => {
     btn.classList.add("nav-bar__btn--active");
     elSections[index].style.display = "block";
   })
-})
+});

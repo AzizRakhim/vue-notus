@@ -94,3 +94,13 @@
 .sections{
   display: none;
 }
+
+@media screen and (max-width: 1280px) {
+  .hero__item{
+    width: 50%;
+  }
+
+  .hero__item-inner{
+    margin-bottom: 1.5rem;
+  }
+}
