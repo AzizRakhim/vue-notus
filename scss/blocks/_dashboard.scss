@@ -4,7 +4,6 @@
   margin-top: -7.5rem;
   z-index: 100;
   width: calc(100vw - 17.5rem);
-  overflow-x: hidden;
 }
 
 .dashboard__line{
@@ -227,5 +226,30 @@
 
 .social-twitter-green{
   background-color: rgba(16,185,129,1);
+}
+
+@media screen and (max-width: 1300px) {
+  .dashboard__inner{
+    flex-direction: column;
+  }
+
+  .dashboard__line{
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .dashboard__bar{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .dashboard__page{
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .dashboard__social{
+    width: 100%;
+  }
 }
 

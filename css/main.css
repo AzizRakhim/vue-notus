@@ -146,6 +146,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .hero__item {
+    width: 100%;
+  }
+}
+
 .header__container {
   margin-left: 16rem;
   background-color: #f1f5f9;
@@ -234,6 +240,23 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 9999px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__title {
+    display: none;
+  }
+  .header__search-box {
+    width: 100%;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .header__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .nav-bar {
@@ -364,7 +387,6 @@ body {
   margin-top: -7.5rem;
   z-index: 100;
   width: calc(100vw - 17.5rem);
-  overflow-x: hidden;
 }
 
 .dashboard__line {
@@ -583,6 +605,30 @@ body {
 
 .social-twitter-green {
   background-color: #10b981;
+}
+
+@media screen and (max-width: 1300px) {
+  .dashboard__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dashboard__line {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .dashboard__bar {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .dashboard__page {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .dashboard__social {
+    width: 100%;
+  }
 }
 
 .setting {

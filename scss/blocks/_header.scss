@@ -82,3 +82,18 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .header__title{
+    display: none;
+  }
+
+  .header__search-box{
+    width: 100%;
+    justify-content: start !important;
+  }
+
+  .header__wrapper{
+    justify-content: space-between;
+  }
+}
+
