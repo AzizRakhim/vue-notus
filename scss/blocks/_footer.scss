@@ -1,7 +1,6 @@
 .footer{
   margin-left: 16rem;
   padding: 1rem 0;
-  display: none;
 }
 
 .footer__container{
@@ -53,4 +52,24 @@
   font-weight: 600;
   text-transform: capitalize;
   text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  .footer__list{
+    justify-content: end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer{
+    margin-left: 0;
+  }
+
+  .footer__holder{
+    flex-direction: column;
+  }
+
+  .footer__list{
+    justify-content: center;
+  }
 }

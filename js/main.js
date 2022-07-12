@@ -14,3 +14,20 @@ elSectionBtns.forEach((btn, index) => {
     elSections[index].style.display = "block";
   })
 });
+
+// Header menu
+
+let elMenuBtn = document.querySelector("#menuBtn");
+let elMenu = document.querySelector(".nav-bar__container");
+let elCount = 0;
+
+elMenuBtn.addEventListener("click", () => {
+  if(elCount == 0){
+    elMenu.style.display = "block";
+    elCount++;
+  } else {
+    elMenu.style.display = "none";
+    elCount--;
+  }
+  
+})

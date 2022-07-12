@@ -171,10 +171,14 @@
   }
 
   .nav-bar__container{
+    margin: 0.5rem !important;
+    background-color: #fff;
     display: none;
   }
 
   .nav-bar__header{
     display: flex !important;
   }
+
+
 }
