@@ -128,8 +128,8 @@
 
   img{
     border-radius: 9999px;
-    width: 100%;
-    max-width: 150px;
+    height: 150px;
+    width: 150px;
   }
 }
 
@@ -233,4 +233,42 @@
 .setting__bio-bottom-link{
   color: rgba(16,185,129,1);
   text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .setting__num-item{
+    margin-right: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .setting__input-box{
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .setting__bio-box{
+    width: 100%;
+  }
+
+  .setting__bio-bottom-text{
+    width: 100%;
+  }
+
+  .setting__input-item{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .setting{
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .setting__inner{
+    width: 89vw;
+  }
 }

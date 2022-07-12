@@ -110,3 +110,71 @@
   }
 }
 
+.nav-bar__header{
+  display: none !important;
+}
+
+.header__menu-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__menu-btn{
+  padding: 0.25rem 0.75rem;
+  opacity: 0.5;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e4e4e7;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.header__bell-btn{
+  color: rgba(100,116,139,1);
+  padding: 0.25rem 0.75rem;
+  border: none;
+  background-color: transparent;
+}
+
+.header__menu-title{
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-link{
+  text-transform: uppercase;
+  color: rgba(71,85,105,1);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 1rem 0;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar{
+    z-index: 999;
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-bar__title{
+    display: none;
+  }
+
+  .nav-bar__container{
+    display: none;
+  }
+
+  .nav-bar__header{
+    display: flex !important;
+  }
+}

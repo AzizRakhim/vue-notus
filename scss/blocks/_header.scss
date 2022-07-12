@@ -66,9 +66,12 @@
 }
 
 .header__img-box{
-  width: 3rem;
-  height: 3rem;
   border-radius: 9999px;
+
+  img{
+    width: 3rem !important;
+    height: 3rem !important;
+  }
 }
 
 .header__user-btn{
@@ -94,6 +97,16 @@
 
   .header__wrapper{
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header{
+    display: none;
+  }
+
+  .header__container{
+    margin-left: 0;
   }
 }
 

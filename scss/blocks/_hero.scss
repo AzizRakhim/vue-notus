@@ -110,3 +110,9 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .hero__middle-list{
+    width: 100vw;
+  }
+}

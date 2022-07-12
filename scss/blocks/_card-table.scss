@@ -44,6 +44,17 @@
 }
 
 .card-table{
+  width: calc(100vw - 16rem);
+
+  .dashboard__table-box{
+    overflow-x: auto;
+  }
+
+  table{
+    width: 100%;
+    overflow-x: auto;
+  }
+  
   td{
     vertical-align: middle;
   }
@@ -145,4 +156,11 @@
 
 .table-color-white{
   color: #fff !important;
+}
+
+@media screen and (max-width: 768px) {
+  .card-table{
+    margin-left: 0;
+    width: 100vw;
+  }
 }
